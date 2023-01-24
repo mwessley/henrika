@@ -2,99 +2,290 @@ players:
   - Hendrik
   - Frederike
 person_cards:
-  - name: Alice
+  - name: Miri
     attributes:
-      strength: 5
+      strength: 6
       intelligence: 8
       agility: 7
-      charm: 6
-  - name: Bob
+      charm: 9
+  - name: Matthias
     attributes:
-      strength: 8
-      intelligence: 4
-      agility: 6
-      charm: 3
-  - name: Charlie
-    attributes:
-      strength: 6
-      intelligence: 7
+      strength: 3
+      intelligence: 9
       agility: 5
-      charm: 4
-  - name: Matthias 
-    attributes:
-      strength: 6
-      intelligence: 7
-      agility: 5
-      charm: 4
+      charm: 7
   - name: Paul
     attributes:
-      strength: 6
-      intelligence: 7
-      agility: 5
-      charm: 4
-  - name: Miriam
-    attributes:
-      strength: 6
-      intelligence: 7
-      agility: 5
-      charm: 4
-  - name: Paolo
-    attributes:
-      strength: 6
-      intelligence: 7
-      agility: 5
-      charm: 4
-  - name: David
-    attributes:
-      strength: 7
+      strength: 8
       intelligence: 6
+      agility: 7
+      charm: 5
+  - name: Sophie
+    attributes:
+      strength: 4
+      intelligence: 7
       agility: 8
       charm: 9
+  - name: Franz
+    attributes:
+      strength: 7
+      intelligence: 8
+      agility: 5
+      charm: 6
+  - name: Flo
+    attributes:
+      strength: 5
+      intelligence: 7
+      agility: 6
+      charm: 8
+  - name: Gerhard
+    attributes:
+      strength: 6
+      intelligence: 8
+      agility: 7
+      charm: 9
+  - name: Vroni
+    attributes:
+      strength: 3
+      intelligence: 9
+      agility: 5
+      charm: 7
+  - name: Jonas
+    attributes:
+      strength: 8
+      intelligence: 6
+      agility: 7
+      charm: 5
+  - name: Paolo
+    attributes:
+      strength: 4
+      intelligence: 7
+      agility: 8
+      charm: 9
+  - name: Justus
+    attributes:
+      strength: 7
+      intelligence: 8
+      agility: 5
+      charm: 6
+  - name: Silvan
+    attributes:
+      strength: 5
+      intelligence: 7
+      agility: 6
+      charm: 8
+  - name: Nussi
+    attributes:
+      strength: 6
+      intelligence: 8
+      agility: 7
+      charm: 9
+  - name: Costas
+    attributes:
+      strength: 3
+      intelligence: 9
+      agility: 5
+      charm: 7
+  - name: Andre
+    attributes:
+      strength: 8
+      intelligence: 6
+      agility: 7
+      charm: 5
+  - name: Camilla
+    attributes:
+      strength: 4
+      intelligence: 7
+      agility: 8
+      charm: 9
+  - name: Pedram
+    attributes:
+      strength: 7
+      intelligence: 8
+      agility: 5
+      charm: 6
+  - name: Ali
+    attributes:
+      strength: 5
+      intelligence: 7
+      agility: 6
+      charm: 8
+  - name: Manuel T.
+    attributes:
+      strength: 6
+      intelligence: 8
+      agility: 7
+      charm: 9
+  - name: Manuel D.
+    attributes:
+      strength: 3
+      intelligence: 9
+      agility: 5
+      charm: 7
+  - name: Markus Piller
+    attributes:
+      strength: 8
+      intelligence: 6
+      agility: 7
+      charm: 5
 object_cards:
-  - name: Sword
+  - name: Buckfast
+    power: 10
+  - name: Ski
+    power: 8
+  - name: Splitboard
+    power: 6
+  - name: PS4 Controller
     power: 3
-  - name: Shield
+  - name: Nadel&Zwirn
+    power: 4
+  - name: Kinderwagen
     power: 2
-  - name: Magic wand
+  - name: Bier
+    power: 10
+  - name: Lakritze
+    power: 8
+  - name: Klettersteigset
+    power: 6
+  - name: Fahrrad
     power: 3
-  - name: Key
-    power: 3
-  - name: Flashlight
+  - name: Gamingsessel
     power: 2
+  - name: Brettspiel
+    power: 5
+  - name: Angel
+    power: 10
+  - name: Volleyball
+    power: 8
+  - name: Kartoffelsalat
+    power: 6
+  - name: Boombox
+    power: 3
 tasks:
-  - name: Fight the dragon
+  - name: Rax Gipfelbesteigung
     difficulties:
       strength: 8
-      intelligence: 6
-      agility: 7
-  - name: Solve the puzzle
+      agility: 9
+    bonus:
+      Gerhard, Ski: 5
+      Paolo, Splitboard: 3
+    result:
+      success: "Eine Gipfelbesteigung mit [person] und dem/r [object], immer ein Spaß auch wenn das Wetter nicht mitspielt!"
+      fail: "Ohje eine Gipfelbesteigung mit [person] und dem/r [object] und das auch noch bei Wetter wie an der Nordsee, das kann ja nicht gutgehen!"
+  - name: Wexltrails
+    difficulties:
+      strength: 8
+      agility: 6
+    bonus:
+      Nussi, Fahrrad: 2
+    result:
+      success: false
+      fail: false
+  - name: Würstlprater
     difficulties:
       intelligence: 8
       charm: 6
-  - name: Escape the maze
-    difficulties:
-      agility: 8
-      charm: 5
-  - name: Survive the storm
-    difficulties:
-      strength: 6
-      intelligence: 7
-      agility: 5
-  - name: Fight the dragon
+    bonus:
+      Justus, PS4 Controller: 1
+    result:
+      success: false
+      fail: false
+  - name: Schifahren in Schladming
     difficulties:
       strength: 8
-      intelligence: 6
       agility: 7
-  - name: Solve the puzzle
+    bonus:
+      Silvan, Ski: 4
+    result:
+      success: false
+      fail: false
+  - name: Therme
     difficulties:
-      intelligence: 8
-      charm: 6
-  - name: Escape the maze
+      charm: 8
+    bonus:
+      Camilla, Boombox: 2
+    result:
+      success: false
+      fail: false
+  - name: Go-Kart fahren
     difficulties:
       agility: 8
-      charm: 5
-  - name: Survive the storm
+    bonus:
+      Pedram, PS4 Controller: 4
+    result:
+      success: "Dieses Mal geht alles gut und [person] rammt dich nicht ins Nirvana! Auf dem/n/r [object] bist du einfach unschlagbar."
+      fail: "Du steigst aufs Gas aber der/die/das [object] bewegt sich keinen Centimeter und siehst [person] nur in der Ferne verschwinden." 
+  - name: Badeausflug auf der Donauinsel
     difficulties:
       strength: 6
+      agility: 7
+      charm: 5
+    bonus:
+      Ali, Volleyball: 3
+    result:
+      success: false
+      fail: false
+  - name: Gansl'essen
+    difficulties:
+      strength: 8
       intelligence: 7
-      agility: 5
+    bonus:
+      Andre, Bier: 4
+    result:
+      success: false
+      fail: false
+  - name: Grillen beim Paul
+    difficulties:
+      intelligence: 8
+      charm: 5
+    bonus:
+      Vroni, Kinderwagen: 2
+    result:
+      success: false
+      fail: false
+  - name: Angeln
+    difficulties:
+      intelligence: 6
+      charm: 7
+    bonus:
+      Franz, Angel: 3
+    result:
+      success: false
+      fail: false
+  - name: Camping in Lunz
+    difficulties:
+      strength: 8
+      intelligence: 7
+      charm: 6
+    bonus:
+      Jonas, Klettersteigset: 4
+    result:
+      success: false
+      fail: false
+  - name: Radausflug
+    difficulties:
+      strength: 8
+      agility: 7
+    bonus:
+      Costas, Fahrrad: 2
+    result:
+      success: false
+      fail: false
+  - name: Bastelabend
+    difficulties:
+      intelligence: 8
+      charm: 5
+    bonus:
+      Manuel T., Nadel&Zwirn: 1
+    result:
+      success: false
+      fail: false
+  - name: Sissy Filmabend
+    difficulties:
+      charm: 8
+    bonus:
+      Manuel D., Brettspiel: 2
+    result:
+      success: Ein Sissy Filmabend mit [person] ist immer nett, nur warum hat er/sie eine/n [object] mitgebracht.
+      fail: Mit dem/r [object] kommt dir [person] nicht ins Haus! Nicht wenn es ums Sissyschauen geht!
+
