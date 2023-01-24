@@ -1,0 +1,100 @@
+players:
+  - Hendrik
+  - Frederike
+person_cards:
+  - name: Alice
+    attributes:
+      strength: 5
+      intelligence: 8
+      agility: 7
+      charm: 6
+  - name: Bob
+    attributes:
+      strength: 8
+      intelligence: 4
+      agility: 6
+      charm: 3
+  - name: Charlie
+    attributes:
+      strength: 6
+      intelligence: 7
+      agility: 5
+      charm: 4
+  - name: Matthias 
+    attributes:
+      strength: 6
+      intelligence: 7
+      agility: 5
+      charm: 4
+  - name: Paul
+    attributes:
+      strength: 6
+      intelligence: 7
+      agility: 5
+      charm: 4
+  - name: Miriam
+    attributes:
+      strength: 6
+      intelligence: 7
+      agility: 5
+      charm: 4
+  - name: Paolo
+    attributes:
+      strength: 6
+      intelligence: 7
+      agility: 5
+      charm: 4
+  - name: David
+    attributes:
+      strength: 7
+      intelligence: 6
+      agility: 8
+      charm: 9
+object_cards:
+  - name: Sword
+    power: 3
+  - name: Shield
+    power: 2
+  - name: Magic wand
+    power: 3
+  - name: Key
+    power: 3
+  - name: Flashlight
+    power: 2
+tasks:
+  - name: Fight the dragon
+    difficulties:
+      strength: 8
+      intelligence: 6
+      agility: 7
+  - name: Solve the puzzle
+    difficulties:
+      intelligence: 8
+      charm: 6
+  - name: Escape the maze
+    difficulties:
+      agility: 8
+      charm: 5
+  - name: Survive the storm
+    difficulties:
+      strength: 6
+      intelligence: 7
+      agility: 5
+  - name: Fight the dragon
+    difficulties:
+      strength: 8
+      intelligence: 6
+      agility: 7
+  - name: Solve the puzzle
+    difficulties:
+      intelligence: 8
+      charm: 6
+  - name: Escape the maze
+    difficulties:
+      agility: 8
+      charm: 5
+  - name: Survive the storm
+    difficulties:
+      strength: 6
+      intelligence: 7
+      agility: 5
