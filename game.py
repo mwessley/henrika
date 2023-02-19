@@ -1,6 +1,7 @@
 import random
 from pprint import pprint
 import yaml
+from PIL import Image, ImageDraw, ImageFont
 
 HEADER = '\033[95m'
 OKBLUE = '\033[94m'
@@ -18,6 +19,9 @@ class Card:
         self.name = name
         
     def __str__(self):
+        return self.name
+    
+    def generate_card(self):
         return self.name
 
 
@@ -142,6 +146,7 @@ class Game:
                 self.player1_hand.append(card)
             else:
                 self.player2_hand.append(card)
+                o
 
     def play(self):
         print("Start Game, Shuffling Cards!")
@@ -254,6 +259,97 @@ class Game:
             game.add_object_card(Object(obj["name"], obj["power"]))
         return game
         
+    def generate_game_cards(self):
+        """generates pdfs with containing the game cards"""
+        # create A4 image
+        a4height = 842
+        a4width = 595
+        
+        # render person cards
+        row, col, page = 0, 0, 0
+        for i_tot, p in enumerate(self.person_cards):
+            cards_horizontal = 4
+            cards_vertical = 4
+            i = i_tot % (cards_horizontal * cards_vertical)
+            if i == 0:
+                a4im = Image.new('RGB',
+                                (a4width, a4height),   # A4 at 72dpi
+                                (255, 255, 255))  # White
+                draw = ImageDraw.Draw(a4im)
+            page = i_tot // (cards_horizontal * cards_vertical)
+            row = i // cards_vertical
+            col = i % cards_horizontal
+            horizontal_margin = 10
+            vertical_margin = 10
+            card_height = (a4height-2*horizontal_margin)/cards_vertical
+            card_width = (a4width-2*vertical_margin)/cards_horizontal
+            
+            # generate card rectangle for person card
+            print((vertical_margin + col * card_width, horizontal_margin + row * card_height, card_width + col * card_width, card_height + row * card_height))
+            draw.rounded_rectangle((vertical_margin + col * card_width, horizontal_margin + row * card_height, card_width + col * card_width, card_height + row * card_height), radius=10, fill=(255, 255, 255), outline=(0, 0, 0))
+            draw.text((vertical_margin + col * card_width + 10, horizontal_margin + row * card_height + 10), p.name, fill=(0, 0, 0))
+            for i, (k, v) in enumerate(p.attributes.items()):
+                draw.text((vertical_margin + col * card_width + 10 , horizontal_margin + row * card_height + 20 + 20*(i+1)), f"{k}: {v}", fill=(0, 0, 0))
+
+            a4im.save(f"person_cards_{page}.pdf")
+            
+        #render object cards
+        row, col, page = 0, 0, 0
+        for i_tot, o in enumerate(self.object_cards):
+            cards_horizontal = 4
+            cards_vertical = 4
+            i = i_tot % (cards_horizontal * cards_vertical)
+            if i == 0:
+                a4im = Image.new('RGB',
+                                (a4width, a4height),   # A4 at 72dpi
+                                (255, 255, 255))  # White
+                draw = ImageDraw.Draw(a4im)
+            page = i_tot // (cards_horizontal * cards_vertical)
+            row = i // cards_vertical
+            col = i % cards_horizontal
+            horizontal_margin = 10
+            vertical_margin = 10
+            card_height = (a4height-2*horizontal_margin)/cards_vertical
+            card_width = (a4width-2*vertical_margin)/cards_horizontal
+            
+            draw.rounded_rectangle((vertical_margin + col * card_width, horizontal_margin + row * card_height, card_width + col * card_width, card_height + row * card_height), radius=10, fill=(255, 255, 255), outline=(0, 0, 0))
+            draw.text((vertical_margin + col * card_width + 10, horizontal_margin + row * card_height + 10), o.name, fill=(0, 0, 0))
+            draw.text((vertical_margin + col * card_width + 10 , horizontal_margin + row * card_height + 20), f"Power : {o.power}", fill=(0, 0, 0))
+            
+            a4im.save(f"object_cards_{page}.pdf")
+            
+        #render task cards
+        row, col, page = 0, 0, 0
+        for i_tot, t in enumerate(self.tasks):
+            cards_horizontal = 4
+            cards_vertical = 4
+            i = i_tot % (cards_horizontal * cards_vertical)
+            if i == 0:
+                a4im = Image.new('RGB',
+                                (a4width, a4height),   # A4 at 72dpi
+                                (255, 255, 255))  # White
+                draw = ImageDraw.Draw(a4im)
+            page = i_tot // (cards_horizontal * cards_vertical)
+            row = i // cards_vertical
+            col = i % cards_horizontal
+            horizontal_margin = 10
+            vertical_margin = 10
+            card_height = (a4height-2*horizontal_margin)/cards_vertical
+            card_width = (a4width-2*vertical_margin)/cards_horizontal
+
+            draw.rounded_rectangle((vertical_margin + col * card_width, horizontal_margin + row * card_height, card_width + col * card_width, card_height + row * card_height), radius=10, fill=(255, 255, 255), outline=(0, 0, 0))
+            draw.text((vertical_margin + col * card_width + 10, horizontal_margin + row * card_height + 10), t.name, fill=(0, 0, 0))
+            for i, (k, v) in enumerate(t.difficulties.items()):
+                draw.text((vertical_margin + col * card_width + 10 , horizontal_margin + row * card_height + 20 + 20*(i+1)), f"{k}: {v}", fill=(0, 0, 0))
+            a4im.save(f"task_cards_{page}.pdf")
+            
+                
+                  
+            
+            
+                
+            
+        
         
 
 def main():
@@ -262,8 +358,9 @@ def main():
     
     file_path = "game_data.yaml"
     game = Game.load_game_data(file_path)   
-    game.play()
-    game.print_game()
+    #game.play()
+    #game.print_game()
+    game.generate_game_cards()
 
 if __name__ == "__main__":
     main()

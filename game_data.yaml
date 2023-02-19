@@ -4,130 +4,130 @@ players:
 person_cards:
   - name: Miri
     attributes:
-      strength: 6
-      intelligence: 8
-      agility: 7
-      charm: 9
+      trinkfestigkeit: 6
+      chillfactor: 8
+      sportiveness: 7
+      dance_skills: 9
   - name: Matthias
     attributes:
-      strength: 3
-      intelligence: 9
-      agility: 5
-      charm: 7
+      trinkfestigkeit: 3
+      chillfactor: 9
+      sportiveness: 5
+      dance_skills: 7
   - name: Paul
     attributes:
-      strength: 8
-      intelligence: 6
-      agility: 7
-      charm: 5
+      trinkfestigkeit: 8
+      chillfactor: 6
+      sportiveness: 7
+      dance_skills: 5
   - name: Sophie
     attributes:
-      strength: 4
-      intelligence: 7
-      agility: 8
-      charm: 9
+      trinkfestigkeit: 4
+      chillfactor: 7
+      sportiveness: 8
+      dance_skills: 9
   - name: Franz
     attributes:
-      strength: 7
-      intelligence: 8
-      agility: 5
-      charm: 6
+      trinkfestigkeit: 7
+      chillfactor: 8
+      sportiveness: 5
+      dance_skills: 6
   - name: Flo
     attributes:
-      strength: 5
-      intelligence: 7
-      agility: 6
-      charm: 8
+      trinkfestigkeit: 5
+      chillfactor: 7
+      sportiveness: 6
+      dance_skills: 8
   - name: Gerhard
     attributes:
-      strength: 6
-      intelligence: 8
-      agility: 7
-      charm: 9
+      trinkfestigkeit: 6
+      chillfactor: 8
+      sportiveness: 7
+      dance_skills: 9
   - name: Vroni
     attributes:
-      strength: 3
-      intelligence: 9
-      agility: 5
-      charm: 7
+      trinkfestigkeit: 3
+      chillfactor: 9
+      sportiveness: 5
+      dance_skills: 7
   - name: Jonas
     attributes:
-      strength: 8
-      intelligence: 6
-      agility: 7
-      charm: 5
+      trinkfestigkeit: 8
+      chillfactor: 6
+      sportiveness: 7
+      dance_skills: 5
   - name: Paolo
     attributes:
-      strength: 4
-      intelligence: 7
-      agility: 8
-      charm: 9
+      trinkfestigkeit: 4
+      chillfactor: 7
+      sportiveness: 8
+      dance_skills: 9
   - name: Justus
     attributes:
-      strength: 7
-      intelligence: 8
-      agility: 5
-      charm: 6
+      trinkfestigkeit: 7
+      chillfactor: 8
+      sportiveness: 5
+      dance_skills: 6
   - name: Silvan
     attributes:
-      strength: 5
-      intelligence: 7
-      agility: 6
-      charm: 8
+      trinkfestigkeit: 5
+      chillfactor: 7
+      sportiveness: 6
+      dance_skills: 8
   - name: Nussi
     attributes:
-      strength: 6
-      intelligence: 8
-      agility: 7
-      charm: 9
+      trinkfestigkeit: 6
+      chillfactor: 8
+      sportiveness: 7
+      dance_skills: 9
   - name: Costas
     attributes:
-      strength: 3
-      intelligence: 9
-      agility: 5
-      charm: 7
+      trinkfestigkeit: 3
+      chillfactor: 9
+      sportiveness: 5
+      dance_skills: 7
   - name: Andre
     attributes:
-      strength: 8
-      intelligence: 6
-      agility: 7
-      charm: 5
+      trinkfestigkeit: 8
+      chillfactor: 6
+      sportiveness: 7
+      dance_skills: 5
   - name: Camilla
     attributes:
-      strength: 4
-      intelligence: 7
-      agility: 8
-      charm: 9
+      trinkfestigkeit: 4
+      chillfactor: 7
+      sportiveness: 8
+      dance_skills: 9
   - name: Pedram
     attributes:
-      strength: 7
-      intelligence: 8
-      agility: 5
-      charm: 6
+      trinkfestigkeit: 7
+      chillfactor: 8
+      sportiveness: 5
+      dance_skills: 6
   - name: Ali
     attributes:
-      strength: 5
-      intelligence: 7
-      agility: 6
-      charm: 8
+      trinkfestigkeit: 5
+      chillfactor: 7
+      sportiveness: 6
+      dance_skills: 8
   - name: Manuel T.
     attributes:
-      strength: 6
-      intelligence: 8
-      agility: 7
-      charm: 9
+      trinkfestigkeit: 6
+      chillfactor: 8
+      sportiveness: 7
+      dance_skills: 9
   - name: Manuel D.
     attributes:
-      strength: 3
-      intelligence: 9
-      agility: 5
-      charm: 7
+      trinkfestigkeit: 3
+      chillfactor: 9
+      sportiveness: 5
+      dance_skills: 7
   - name: Markus Piller
     attributes:
-      strength: 8
-      intelligence: 6
-      agility: 7
-      charm: 5
+      trinkfestigkeit: 8
+      chillfactor: 6
+      sportiveness: 7
+      dance_skills: 5
 object_cards:
   - name: Buckfast
     power: 10
@@ -164,8 +164,8 @@ object_cards:
 tasks:
   - name: Rax Gipfelbesteigung
     difficulties:
-      strength: 8
-      agility: 9
+      trinkfestigkeit: 8
+      sportiveness: 9
     bonus:
       Gerhard, Ski: 5
       Paolo, Splitboard: 3
@@ -174,8 +174,8 @@ tasks:
       fail: "Ohje eine Gipfelbesteigung mit [person] und dem/r [object] und das auch noch bei Wetter wie an der Nordsee, das kann ja nicht gutgehen!"
   - name: Wexltrails
     difficulties:
-      strength: 8
-      agility: 6
+      trinkfestigkeit: 8
+      sportiveness: 6
     bonus:
       Nussi, Fahrrad: 2
     result:
@@ -183,8 +183,8 @@ tasks:
       fail: false
   - name: Würstlprater
     difficulties:
-      intelligence: 8
-      charm: 6
+      chillfactor: 8
+      dance_skills: 6
     bonus:
       Justus, PS4 Controller: 1
     result:
@@ -192,8 +192,8 @@ tasks:
       fail: false
   - name: Schifahren in Schladming
     difficulties:
-      strength: 8
-      agility: 7
+      trinkfestigkeit: 8
+      sportiveness: 7
     bonus:
       Silvan, Ski: 4
     result:
@@ -201,7 +201,7 @@ tasks:
       fail: false
   - name: Therme
     difficulties:
-      charm: 8
+      dance_skills: 8
     bonus:
       Camilla, Boombox: 2
     result:
@@ -209,7 +209,7 @@ tasks:
       fail: false
   - name: Go-Kart fahren
     difficulties:
-      agility: 8
+      sportiveness: 8
     bonus:
       Pedram, PS4 Controller: 4
     result:
@@ -217,9 +217,9 @@ tasks:
       fail: "Du steigst aufs Gas aber der/die/das [object] bewegt sich keinen Centimeter und siehst [person] nur in der Ferne verschwinden." 
   - name: Badeausflug auf der Donauinsel
     difficulties:
-      strength: 6
-      agility: 7
-      charm: 5
+      trinkfestigkeit: 6
+      sportiveness: 7
+      dance_skills: 5
     bonus:
       Ali, Volleyball: 3
     result:
@@ -227,8 +227,8 @@ tasks:
       fail: false
   - name: Gansl'essen
     difficulties:
-      strength: 8
-      intelligence: 7
+      trinkfestigkeit: 8
+      chillfactor: 7
     bonus:
       Andre, Bier: 4
     result:
@@ -236,8 +236,8 @@ tasks:
       fail: false
   - name: Grillen beim Paul
     difficulties:
-      intelligence: 8
-      charm: 5
+      chillfactor: 8
+      dance_skills: 5
     bonus:
       Vroni, Kinderwagen: 2
     result:
@@ -245,8 +245,8 @@ tasks:
       fail: false
   - name: Angeln
     difficulties:
-      intelligence: 6
-      charm: 7
+      chillfactor: 6
+      dance_skills: 7
     bonus:
       Franz, Angel: 3
     result:
@@ -254,9 +254,9 @@ tasks:
       fail: false
   - name: Camping in Lunz
     difficulties:
-      strength: 8
-      intelligence: 7
-      charm: 6
+      trinkfestigkeit: 8
+      chillfactor: 7
+      dance_skills: 6
     bonus:
       Jonas, Klettersteigset: 4
     result:
@@ -264,8 +264,8 @@ tasks:
       fail: false
   - name: Radausflug
     difficulties:
-      strength: 8
-      agility: 7
+      trinkfestigkeit: 8
+      sportiveness: 7
     bonus:
       Costas, Fahrrad: 2
     result:
@@ -273,8 +273,8 @@ tasks:
       fail: false
   - name: Bastelabend
     difficulties:
-      intelligence: 8
-      charm: 5
+      chillfactor: 8
+      dance_skills: 5
     bonus:
       Manuel T., Nadel&Zwirn: 1
     result:
@@ -282,7 +282,7 @@ tasks:
       fail: false
   - name: Sissy Filmabend
     difficulties:
-      charm: 8
+      dance_skills: 9
     bonus:
       Manuel D., Brettspiel: 2
     result:
