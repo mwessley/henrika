@@ -15,15 +15,16 @@ These instructions will get you a copy of the project up and running on your loc
 
 Clone the repository and install the required libraries:
 
-git clone https://github.com/mwessley/henrika.git
-pip install -r requirements.txt
+`git clone https://github.com/mwessley/henrika.git`
+
+`pip install -r requirements.txt`
 
 
 ### Running the game
 
 You can run the game by executing the `game.py` script:
 
-python game.py
+`python game.py`
 
 
 ## Game rules
