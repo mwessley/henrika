@@ -128,39 +128,135 @@ person_cards:
       chillfactor: 6
       sportiveness: 7
       dance_skills: 5
+  - name: Nr 13th Burrito Mann
+    attributes:
+      trinkfestigkeit: 8
+      chillfactor: 6
+      sportiveness: 7
+      dance_skills: 5
+  - name: Lena
+    attributes:
+      trinkfestigkeit: 8
+      chillfactor: 6
+      sportiveness: 7
+      dance_skills: 5
+  - name: Marius
+    attributes:
+      trinkfestigkeit: 8
+      chillfactor: 6
+      sportiveness: 7
+      dance_skills: 5
+  - name: Lars
+    attributes:
+      trinkfestigkeit: 8
+      chillfactor: 6
+      sportiveness: 7
+      dance_skills: 5
+  - name: Ioan
+    attributes:
+      trinkfestigkeit: 8
+      chillfactor: 6
+      sportiveness: 7
+      dance_skills: 5
+  - name: Miao
+    attributes:
+      trinkfestigkeit: 8
+      chillfactor: 6
+      sportiveness: 7
+      dance_skills: 5
+  - name: Pärtrick
+    attributes:
+      trinkfestigkeit: 8
+      chillfactor: 6
+      sportiveness: 7
+      dance_skills: 5
+  - name: Michi
+    attributes:
+      trinkfestigkeit: 8
+      chillfactor: 6
+      sportiveness: 7
+      dance_skills: 5
+  - name: Claudio
+    attributes:
+      trinkfestigkeit: 8
+      chillfactor: 6
+      sportiveness: 7
+      dance_skills: 5
+  - name: Stoffl
+    attributes:
+      trinkfestigkeit: 8
+      chillfactor: 6
+      sportiveness: 7
+      dance_skills: 5
+  - name: Asti
+    attributes:
+      trinkfestigkeit: 8
+      chillfactor: 6
+      sportiveness: 7
+      dance_skills: 5
+  - name: Martina
+    attributes:
+      trinkfestigkeit: 8
+      chillfactor: 6
+      sportiveness: 7
+      dance_skills: 5
 object_cards:
   - name: Buckfast
-    power: 10
+    power: + 1 Trinkefestigkeit; in Kombination mit PAUL + 2 Trinkfestigkeit
   - name: Ski
-    power: 8
+    power: Im Winter +1 beliebiger Würfel; in Schladming +2 Sportivnes
   - name: Splitboard
-    power: 6
+    power: Im Winter +1 beliebiger Würfel; bei Skitour +2 Sportivnes
   - name: PS4 Controller
-    power: 3
+    power: Deaktiviert eine aktive Gegnerischen Person 
   - name: Nadel&Zwirn
-    power: 4
+    power: +2 Creativity Würfel; bei Batelabend +2 Creativity
   - name: Kinderwagen
-    power: 2
+    power: -1 Würfel beim Gegner, +1 Würfel in Kombination mit Justus
   - name: Bier
-    power: 10
+    power: +1 Trinkfestigkeit; -1 Trinkfestigkeit beim Gegner
   - name: Lakritze
-    power: 8
+    power: Deaktiviert einen anderen Spieler
   - name: Klettersteigset
-    power: 6
+    power: +1 Sportivnes auf der Rax, +2 Sportivnes bei Klettersteig  
   - name: Fahrrad
-    power: 3
+    power: +1 Sportivnes, +2 Sportivnes in Kombination mit Paul, Matthias, Vroni, Gerhard, Flo, Nick
   - name: Gamingsessel
-    power: 2
+    power: Deaktiviert einen anderen Spieler
   - name: Brettspiel
-    power: 5
+    power: +2 beliebige Würfel beim Spieleabend, +1 beliebige Würfel bei Dominion 
   - name: Angel
-    power: 10
+    power: + 2 beliebige Würfel bei Flo, Gerhard und Jonas
   - name: Volleyball
-    power: 8
+    power: + 1 Spotifnes Würfel im Sommer 
   - name: Kartoffelsalat
-    power: 6
+    power: + 2 Würfel beim Picknick im Prater, +1 Würfel bei Grillen bei Paul
+  - name: Burrito
+    power: + 1 beliebiger Würfel & -1 Sportivnes Würfel
+  - name: Die neuste 3 ??? Folge
+    power: Gegener muss 1 Runde aussetzten
+  - name: Sommerrollen
+    power: + 1 beliebiger Würfel & -1 Sportivnes Würfel
+  - name: Ukulele
+    power: + 1 Creativity Würfel   
   - name: Boombox
-    power: 3
+    power: + 1 Danceskills Würfel 
+  - name: Klarinette
+    power: + 1 Creativity Würfel
+  - name: Soda Zitron
+    power: + 1 Chillfactor Würfel
+  - name: Gin Tonic
+    power: + 1 Danceskills Würfel; -1 Trinkfestigkeit Würfel
+  - name: Manner Schnitten
+    power: einen Freund aktivieren
+  - name: Turbo-Punsch
+    power: + Trinkfestigkeit Würfel im Winter
+  - name: Sensor-Cafe-Kaffee
+    power: einen Freund aktivieren
+  - name: Frisch gepflückter Bärlauch
+    power: ein Objekt des Gegners stehlen
+  - name: Captain Sonar
+    power: einen aktiven Freund mit einem deativieten tauschen 
 tasks:
   - name: Rax Gipfelbesteigung
     difficulties:
@@ -178,6 +274,33 @@ tasks:
       sportiveness: 6
     bonus:
       Nussi, Fahrrad: 2
+    result:
+      success: false
+      fail: false
+  - name: Fetzen Fliegen
+    difficulties:
+      trinkfestigkeit: 8
+      sportiveness: 6
+    bonus:
+      Nussi, Fahrrad: 2
+    result:
+      success: false
+      fail: false
+  - name: Kino Besuch
+    difficulties:
+      trinkfestigkeit: 8
+      sportiveness: 6
+    bonus:
+      Nussi, Fahrrad: 2
+    result:
+      success: false
+      fail: false
+  - name: Klettersteig
+    difficulties:
+      chillfactor: 8
+      dance_skills: 6
+    bonus:
+      Justus, PS4 Controller: 1
     result:
       success: false
       fail: false
@@ -288,4 +411,156 @@ tasks:
     result:
       success: Ein Sissy Filmabend mit [person] ist immer nett, nur warum hat er/sie eine/n [object] mitgebracht.
       fail: Mit dem/r [object] kommt dir [person] nicht ins Haus! Nicht wenn es ums Sissyschauen geht!
-
+  - name: Kochabend
+    difficulties:
+      chillfactor: 8
+      dance_skills: 5
+    bonus:
+      Manuel T., Nadel&Zwirn: 1
+    result:
+      success: false
+      fail: false
+  - name: Après-Ski Party
+    difficulties:
+      chillfactor: 8
+      dance_skills: 5
+    bonus:
+      Manuel T., Nadel&Zwirn: 1
+    result:
+      success: false
+      fail: false
+  - name: Party in der Villa Bunter Hund
+    difficulties:
+      chillfactor: 8
+      dance_skills: 5
+    bonus:
+      Manuel T., Nadel&Zwirn: 1
+    result:
+      success: false
+      fail: false
+   - name: Kutschenfahrt in Wien
+    difficulties:
+      chillfactor: 8
+      dance_skills: 5
+    bonus:
+      Manuel T., Nadel&Zwirn: 1
+    result:
+      success: false
+      fail: false
+    - name: Sommerlichen Salat zubereiten
+    difficulties:
+      chillfactor: 8
+      dance_skills: 5
+    bonus:
+      Manuel T., Nadel&Zwirn: 1
+    result:
+      success: false
+      fail: false
+    - name: Porrige Zubereitung meistern 
+    difficulties:
+      chillfactor: 8
+      dance_skills: 5
+    bonus:
+      Manuel T., Nadel&Zwirn: 1
+    result:
+      success: false
+      fail: false
+    - name: Blumenkranz Binden
+    difficulties:
+      chillfactor: 8
+      dance_skills: 5
+    bonus:
+      Manuel T., Nadel&Zwirn: 1
+    result:
+      success: false
+      fail: false
+    - name: Miso Suppe Essen
+    difficulties:
+      chillfactor: 8
+      dance_skills: 5
+    bonus:
+      Manuel T., Nadel&Zwirn: 1
+    result:
+      success: false
+      fail: false
+    - name: Picknick im Prater
+    difficulties:
+      chillfactor: 8
+      dance_skills: 5
+    bonus:
+      Manuel T., Nadel&Zwirn: 1
+    result:
+      success: false
+      fail: false
+    - name: Brunchen im Magdas
+    difficulties:
+      chillfactor: 8
+      dance_skills: 5
+    bonus:
+      Manuel T., Nadel&Zwirn: 1
+    result:
+      success: false
+      fail: false
+    - name: Online Dominion 
+    difficulties:
+      chillfactor: 8
+      dance_skills: 5
+    bonus:
+      Manuel T., Nadel&Zwirn: 1
+    result:
+      success: false
+      fail: false
+    - name: Dancen im O-Club
+    difficulties:
+      chillfactor: 8
+      dance_skills: 5
+    bonus:
+      Manuel T., Nadel&Zwirn: 1
+    result:
+      success: false
+      fail: false
+    - name: Karaoke im Travelshack 
+    difficulties:
+      chillfactor: 8
+      dance_skills: 5
+    bonus:
+      Manuel T., Nadel&Zwirn: 1
+    result:
+      success: false
+      fail: false
+    - name: Pizza Backen
+    difficulties:
+      chillfactor: 8
+      dance_skills: 5
+    bonus:
+      Manuel T., Nadel&Zwirn: 1
+    result:
+      success: false
+      fail: false
+    - name: Mittagsburrito im Nr 13 
+    difficulties:
+      chillfactor: 8
+      dance_skills: 5
+    bonus:
+      Manuel T., Nadel&Zwirn: 1
+    result:
+      success: false
+      fail: false
+    - name: Feierabendbier auf der EI Dachterasse
+    difficulties:
+      chillfactor: 8
+      dance_skills: 5
+    bonus:
+      Manuel T., Nadel&Zwirn: 1
+    result:
+      success: false
+      fail: false
+    - name: Seife selber machen 
+    difficulties:
+      chillfactor: 8
+      dance_skills: 5
+    bonus:
+      Manuel T., Nadel&Zwirn: 1
+    result:
+      success: false
+      fail: false
